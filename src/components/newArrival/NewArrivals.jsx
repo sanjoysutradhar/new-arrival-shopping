@@ -28,7 +28,7 @@ function NewArrival() {
             <LoadingProduct />
             <LoadingProduct />
           </>
-        ) : products.length > 0 ? (
+        ) : (
           <>
             <div className="mt-10">
               <div className="flex justify-between relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
@@ -38,11 +38,6 @@ function NewArrival() {
             </div>
             <Products products={products} />
           </>
-        ) : (
-          <div className="mx-10">
-            <LoadingProduct />
-            <LoadingProduct />
-          </div>
         )}
       </div>
     </div>
